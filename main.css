@@ -32,6 +32,13 @@ ul {
 }
 
 
+@media screen and (min-width: 800px) {
+  snippet {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .container {
   display: inline-block;
   
