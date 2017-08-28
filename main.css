@@ -1,4 +1,4 @@
- body, html { 
+body, html { 
    margin: 0; 
    padding: 0; 
    width: 100%; 
@@ -24,24 +24,23 @@ ul {
    margin: 0; 
    width: 100% 
 } 
- 
+
+
 @media screen and (min-width: 400px) { 
-   snippet { 
-     display: flex; 
-     flex-wrap: wrap; 
+ 
+    display: flex;
+    flex-wrap: wrap;
 } 
  
  
 @media screen and (min-width: 800px) { 
-   snippet { 
-     display: flex; 
-     flex-wrap: wrap; 
+  
+    display: flex; 
+    flex-wrap: wrap;
 } 
 
- 
 .container { 
    display: inline-block; 
-    
 } 
  
 /*
@@ -97,8 +96,8 @@ ul {
 } 
  
 header li { 
-   text-align: right; 
-   float: right: 
+   text-align: right;
+   float: right; 
 } 
 
  /* 
@@ -115,8 +114,7 @@ header li {
 } 
  
 .middle__pic { 
-  
-  min-height: 400px;
+  width: 100%
 } 
  
  /* 
@@ -125,54 +123,56 @@ header li {
   * 
   */ 
  
- .projects { 
+.projects { 
    width: 100%; 
    margin-left: 10px; 
    clear: both; 
-   min-height: 50px; 
-   
- } 
+   min-height: 50px;    
+} 
  
  
 .projects__title { 
    font-weight: 200; 
    font-size: 2.5em; 
-   color: #7d97ad; 
-   text-align: middle; 
-   position: relative; 
-    
-} 
+   color: #7d97ad;  
+   position: relative;     
+}
  
 snippet { 
    border-top: 1px solid #E0E0E0; 
   width: 100%; 
    padding: .5em; 
    min-height: 300px; 
- } 
+}
  
  .snippet { 
    clear: both; 
   text-align: center; 
- } 
+}
  
  .snippet__title { 
-   font-weight: 200px; 
- } 
+   font-weight: 200; 
+}
  
 
 .snippet__thumbnail { 
   width: 100%; 
-   margin: 10px; 
- } 
+  margin: 10px; 
+  margin-right: 25px; 
+  margin-left: 25px;
+  height: auto; 
+}
  
 
 .snippetwidth { 
    width: 33%; 
- } 
+}
  
- snippet li { 
+snippet li { 
    display: inline-block; 
    text-align: center; 
- } 
+}
 
-  
+.snippet__word {
+  word-break: break-all;
+}
