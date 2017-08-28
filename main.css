@@ -84,7 +84,8 @@ ul {
    font-weight: 100; 
    font-size: 3em; 
    color: #212121; 
-   display: inline-block; 
+   display: inline-block;
+   text-align: right;
 } 
  
  .header__title2 { 
