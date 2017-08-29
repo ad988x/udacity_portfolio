@@ -26,23 +26,24 @@ ul {
 } 
 
 
-@media screen and (min-width: 400px) { 
- 
-    display: flex;
-    flex-wrap: wrap;
-} 
- 
- 
-@media screen and (min-width: 800px) { 
-  
-    display: flex; 
-    flex-wrap: wrap;
-} 
-
 .container { 
    display: inline-block; 
 } 
+
+@media screen and (max-width: 400px) {
+  .container {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
  
+
+@media screen and (max-width: 700px) {
+  .container {
+    display: block;
+    flex-wrap: wrap;
+  }
+}
 /*
  * 
  * Header 
@@ -60,7 +61,7 @@ ul {
  
  .header { 
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); 
-   min-height: 50px; 
+   min-height: 100px; 
    position: relative; 
    width: 100%; 
 } 
@@ -84,21 +85,19 @@ ul {
    font-weight: 100; 
    font-size: 3em; 
    color: #212121; 
-   display: inline-block;
-   text-align: right;
+   display: inline-block; 
 } 
  
  .header__title2 { 
    font-weight: 100; 
    font-size: 1.5em; 
    color: #212121; 
-   display: inline-block; 
-   float: right; 
 } 
  
 header li { 
    text-align: right;
-   float: right; 
+   float: right;
+   display: inline-block; 
 } 
 
  /* 
@@ -131,7 +130,13 @@ header li {
    min-height: 50px;    
 } 
  
- 
+article {
+  padding: .5em;
+  min-height: auto;
+  text-align: center;
+  max-width: 100%;
+}
+
 .projects__title { 
    font-weight: 200; 
    font-size: 2.5em; 
@@ -139,16 +144,13 @@ header li {
    position: relative;     
 }
  
-snippet { 
-   border-top: 1px solid #E0E0E0; 
-  width: 100%; 
+#snippet { 
+   display: -webkit-flex;
+   display: flex;
+   border-top: 3px solid #E0E0E0; 
+   max-width: 100%; 
    padding: .5em; 
-   min-height: 300px; 
-}
- 
- .snippet { 
-   clear: both; 
-  text-align: center; 
+   height:auto;
 }
  
  .snippet__title { 
@@ -157,11 +159,12 @@ snippet {
  
 
 .snippet__thumbnail { 
-  width: 100%; 
+  max-width: 100%; 
   margin: 10px; 
   margin-right: 25px; 
   margin-left: 25px;
   height: auto; 
+  display: flex;
 }
  
 
@@ -169,11 +172,12 @@ snippet {
    width: 33%; 
 }
  
-snippet li { 
+article li { 
    display: inline-block; 
    text-align: center; 
 }
 
 .snippet__word {
   word-break: break-all;
+text-align: center; 
 }
