@@ -7,16 +7,19 @@ body, html {
  
 
 body { 
-   font-family: Roboto; 
-      
- } 
- 
- h1, h2, h3, h4, h5 { 
-  margin: 0;  
+   font-family: Roboto;      
 } 
+ 
+
+h1, h2, h3, h4, h5 { 
+  margin: 0;  
+}
+
+ 
 header, section, projects, div { 
    box-sizing: border-box; 
 } 
+
 
 ul { 
    list-style: none; 
@@ -24,17 +27,21 @@ ul {
    margin: 0; 
    width: 100%; 
    flex-wrap: wrap;
+   display: flex;
 } 
+
 
 #container {
   flex-wrap: wrap;
   width: 100%;
 }
 
+
 #title { 
    float: right; 
    margin-right: 10px; 
 }    
+
 
 @media screen and (max-width: 360px) {
   .header__title {   
@@ -60,10 +67,12 @@ ul {
   }  
 }
 
+
 .container {
   display: inline-block;
   width: 100%;
 }
+
 
 .header { 
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
@@ -71,6 +80,7 @@ ul {
    width: 100%;
    display: inline-block;   
 } 
+
  
 .header__title {   
   font-weight: 100; 
@@ -80,6 +90,7 @@ ul {
   display: inline-block;
   margin-right: 10px;  
 } 
+
  
 .header__title2 {   
   font-weight: 100; 
@@ -89,6 +100,7 @@ ul {
   margin-right: 10px;  
   display: inline-block;
 } 
+
 
 .header__logo { 
    height: auto; 
@@ -117,10 +129,13 @@ ul {
 
 
 .middle { 
-  margin-top: 10px; 
-  width: 100%; 
-  height: 360px;  
+  margin-top: 10px;   
 }  
+
+.mid__pic {
+  width: 100%; 
+  height: auto;
+}
 
 
 #snippet { 
@@ -133,10 +148,12 @@ ul {
    word-break: break-all;
 }
 
-section li { 
+
+main li { 
    display: inline-block; 
    text-align: center;
 }
+
 
 .snippet__thumbnail { 
   max-width: 100%; 
@@ -147,9 +164,11 @@ section li {
   display: inline-block;
 }
 
+
 .snippetwidth { 
    width: 33%; 
 }
+
 
 .snippet__word {
   word-break: break-all;
